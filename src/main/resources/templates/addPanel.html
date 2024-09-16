@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj zadanie</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="todo-container">
+            <h1>Dodaj nowe zadanie</h1>
+            
+            <form id="addTaskForm">
+                <input type="text" id="taskInput" placeholder="Wpisz treść zadania" required>
+                
+                <label for="categorySelect">Kategoria:</label>
+                <select id="categorySelect" required>
+                    <option value="">Wybierz kategorię</option>
+                    <option value="Praca">Praca</option>
+                    <option value="Dom">Dom</option>
+                    <option value="Zakupy">Zakupy</option>
+                    <option value="Inne">Inne</option>
+                </select>
+
+                <label for="dueDate">Data wykonania:</label>
+                <input type="date" id="dueDate" required>
+
+                <button type="submit" class="btn">Dodaj</button>
+            </form>
+            
+            <a href="index.html" class="btn">Powrót do listy</a>
+        </div>
+    </div>
+</body>
+</html>
