@@ -8,14 +8,15 @@
 </head>
 <body>
     <div class="main-container">
-        <div class="todo-container">
+        <div class="summary">
             <h1>Dodaj nowe zadanie</h1>
-            
-            <form id="addTaskForm">
-                <input type="text" id="taskInput" placeholder="Wpisz treść zadania" required>
-                
-                <label for="categorySelect">Kategoria:</label>
-                <select id="categorySelect" required>
+
+            <form th:action="@{/add}" method="post">
+
+                <input type="text" id="name" name="name" placeholder="Wpisz treść zadania" required>
+
+                <label for="category">Kategoria:</label>
+                <select id="category" name="category" required>
                     <option value="">Wybierz kategorię</option>
                     <option value="Praca">Praca</option>
                     <option value="Dom">Dom</option>
@@ -23,14 +24,15 @@
                     <option value="Inne">Inne</option>
                 </select>
 
-                <label for="dueDate">Data wykonania:</label>
-                <input type="date" id="dueDate" required>
+                <label for="date">Data wykonania:</label>
+                <input type="date" id="date" name="date" required>
 
                 <button type="submit" class="btn">Dodaj</button>
             </form>
             
-            <a href="homePanel.html" class="btn">Powrót do listy</a>
+            <a href="/" class="btn">Powrót do listy</a>
         </div>
     </div>
 </body>
 </html>
+
