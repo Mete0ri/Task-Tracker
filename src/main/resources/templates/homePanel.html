@@ -8,12 +8,19 @@
 <body>
 <div class="main-container">
     <h1>Moje zadania</h1>
-    <div class="task" th:each="task : ${tasks}">
+    <div class="task-list">
+        <div class="task" th:each="task : ${tasks}">
 
-        <strong th:text="${task.name}">Zadanie</strong> <br>
-        Kategoria: <span th:text="${task.category}">Kategoria</span> <br>
-        Data: <span th:text="${task.date}">Data</span>
+            <strong th:text="${task.name}">Zadanie</strong> <br>
+            Kategoria: <span th:text="${task.category}">Kategoria</span> <br>
+            Data: <span th:text="${task.date}">Data</span> <br>
 
+            <form th:action="@{/delete/{id}(id=${task.id})}" method="post" style="display:inline;">
+                <input type="hidden" name="_method" value="DELETE" />
+                <button type="submit" class="btn">Usuń</button>
+            </form>
+
+        </div>
     </div>
     <a href="/add" class="btn">Dodaj zadanie</a>
 </div>
