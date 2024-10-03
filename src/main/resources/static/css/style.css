@@ -26,24 +26,24 @@ body {
 
 h1 {
     font-size: 1.8rem;
-    margin-bottom: 15px;
+    margin-bottom: 100px;
     color: #fff;
 }
 .task-list {
-    overflow-y: auto;  /* Dodaj przewijanie pionowe */
-    max-height: 65vh;  /* Ustaw maksymalną wysokość dla listy zadań */
+    overflow-y: auto;
+    max-height: 65vh;
     margin-bottom: 10px;
-    padding-right: 10px; /* Dla marginesu w przypadku scrollbara */
+    padding-right: 10px;
 }
 .task {
     list-style-type: none;
-    margin: 15px 0;  /* Zmniejsz margines */
-    padding: 15px;  /* Zmniejsz padding */
+    margin: 15px 0;
+    padding: 15px;
     color: #ddd;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 1rem;  /* Zmniejsz font-size */
+    font-size: 1rem;
 }
 
 form {
@@ -53,10 +53,10 @@ form {
 }
 
 input[type="text"], select, input[type="date"] {
-    padding: 8px;  /* Zmniejsz padding */
+    padding: 8px;
     border: none;
     border-radius: 5px;
-    font-size: 0.9rem;  /* Zmniejsz font-size */
+    font-size: 0.9rem;
     outline: none;
 }
 
@@ -66,10 +66,11 @@ select {
 }
 
 .btn {
-    padding: 10px;  /* Zmniejsz padding */
+    display: inline-block;
+    padding: 10px;
     background-color: #08250f;
     color: #fff;
-    margin-top: 10px;  /* Zmniejsz margines */
+    margin-top: 15px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
