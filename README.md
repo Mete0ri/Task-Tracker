@@ -1,7 +1,7 @@
-# ToDoList Application  
+# Task Tracker Application  
 
-**ToDoList** is a simple task management application that allows users to organize their tasks with deadlines efficiently.  
-You can access the live application here: [ToDoList App](https://todolist-bm48.onrender.com/). Sometimes it may take a while for the page to load.
+**Task Tracker** is a simple task management application that allows users to organize their tasks with deadlines efficiently.  
+You can access the live application here: [Task Tracker](https://todolist-bm48.onrender.com/). Sometimes it may take a while for the page to load.
 
 ## Features  
 - **Task Management**: Add, view, and manage tasks.  
